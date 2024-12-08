@@ -1,0 +1,30 @@
+// VALIDAR APELLIDOS DE FORMULARIOS
+let inputsApellidos = document.getElementsByClassName('validar-apellidos');
+let regexApellidos = /^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s'-]+$/;
+
+function validarApellidos(event) {
+    let errorSpan = this.closest('[class*="colu"]').querySelector('span');
+
+    if (event.type === 'blur' && this.value.trim() !== "") {
+        if (regexApellidos.test(this.value)) {
+            errorSpan.textContent = "";
+            this.setCustomValidity("");
+        } else {
+            errorSpan.textContent = "Los apellidos introducidos no son válidos";
+            this.setCustomValidity("Por favor, ingresa apellidos válidos. Solo se permiten letras,"+
+            " espacios, guiones y apóstrofes. No se admiten números ni caracteres especiales adicionales.");
+        }
+    }
+    if (event.type === 'input') {
+        if (regexApellidos.test(this.value)) {
+            errorSpan.textContent = "";
+            this.setCustomValidity("");
+        }
+    }
+}
+
+for (let contador = 0; contador < inputsApellidos.length; contador++) {
+    inputsApellidos[contador].addEventListener('blur', validarApellidos);
+    inputsApellidos[contador].addEventListener('input', validarApellidos);
+}
+// ------------------------------------------------

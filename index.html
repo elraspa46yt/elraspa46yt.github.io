@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reelvix | Empresa de cines</title>
+    <!-- ARCHIVOS JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ARCHIVOS CSS -->
+    <link rel="stylesheet" href="css/bootstrap-prefixed.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cookie.css">
+    <!-- FUENTES DE LETRA IMPORTADAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jura:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ENLACE FONT-AWESOME PARA ICONOS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body data-page-name="Inicio">
+    <!-- NAVBAR -->
+    <header></header>
+    <!------------------------>
+
+    <!-- MAIN -->
+    <main>
+        <div> <!-- ESTO TENDRÁ EL ID 'contenedor-video' SI ME HICIESE FALTA -->
+            <iframe src="https://player.vimeo.com/video/1031266827?loop=1&amp;muted=1&amp;autoplay=1&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="Profesional">
+            </iframe>
+        </div>
+
+        <section id="seccion-intro-web" class="contenedor">
+            <div class="fila">
+                <div class="colu-xs-12">
+                    <h1>Vive la gran pantalla</h1>
+                    <p>
+                        Bienvenido a REELVIX. Aquí encontrarás una amplia variedad de películas en cartelera,
+                        abarcando desde emocionantes aventuras hasta intrigantes thrillers. Disfruta de la mejor
+                        selección cinematográfica.
+                    </p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="colu-xs-12 colu-s-6 colu-l-4 div-input">
+                    <input type="text" name="buscarPelicula"/>
+                    <div class="linea-roja-input"></div>
+                    <label>Busca una película</label>
+                </div>
+                
+                <div class="colu-xs-12 colu-s-6">
+                    <div class="dropdown-personal">
+                        <button>
+                            Filtrar por...
+                            <img src="imagenes/flechaMenuNegra.png" alt="Flecha" class="icono flecha-dropdown" width="20" height="auto"/>
+                        </button>
+                        <div class="dropdown-personal-content">
+                            <a>Opcion 1</a>
+                            <a>Opcion 2</a>
+                            <!-- HAY 2 OPCIONES, PERO REALMENTE DEBERÍA DE ESTAR:
+                                GÉNERO, AÑO ESTRENO, DIRECTOR... 
+                                (ESTO SE HARÁ CON PHP Y UNA BD) -->
+                        </div>
+                    </div>
+                    <div class="dropdown-personal">
+                        <button>
+                            Filtrar por...
+                            <img src="imagenes/flechaMenuNegra.png" alt="Flecha" class="icono flecha-dropdown" width="20" height="auto"/></button>
+                        </button>
+                        <div class="dropdown-personal-content">
+                            <a>Opcion 1</a>
+                            <a>Opcion 2</a>
+                            <!-- HAY 2 OPCIONES, PERO REALMENTE DEBERÍA DE ESTAR:
+                            LOS VALORES PARA CADA OPCIÓN ELEGIDA DEL FILTRADO ANTERIOR 
+                            (ESTO SE HARÁ CON PHP Y UNA BD) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor" id="seccion-all-movies">
+            <div class="fila">
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-absolution.jpg" width="100%" alt="película Absolution"/></a>
+                    <a href="/paginas/absolution.html"><h3>Absolution</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-comoEntrenarATuDragon.jpg" width="100%" alt="película HowToTrainYourDragon"/></a>
+                    <a href="/paginas/absolution.html"><h3>How to train your dragon</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-deadpool.jpg" width="100%" alt="película Deadpool & Wolverine"/></a>
+                    <a href="/paginas/absolution.html"><h3>Deadpool & Wolverine</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-duneProphecy.jpg" width="100%" alt="película Dune: Prophecy"/></a>
+                    <a href="/paginas/absolution.html"><h3>Dune: Prophecy</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-gladiatorII.jpg" width="100%" alt="película Gladiator II"/></a>
+                    <a href="/paginas/absolution.html"><h3>Gladiator II</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-smile2.jpg" width="100%" alt="película Smile 2"/></a>
+                    <a href="/paginas/absolution.html"><h3>Smile 2</h3></a>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-gtmax.jpg" width="100%" alt="película GTMAX"/></a>
+                    <a href="/paginas/absolution.html"><h3>GTMAX</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-wicked.jpg" width="100%" alt="película Wicked"/></a>
+                    <a href="/paginas/absolution.html"><h3>Wicked</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-venom.jpg" width="100%" alt="película Venom"/></a>
+                    <a href="/paginas/absolution.html"><h3>Venom</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-cashOut.jpg" width="100%" alt="película Cash Out"/></a>
+                    <a href="/paginas/absolution.html"><h3>Cash Out</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-interstellar.jpg" width="100%" alt="película Interstellar"/></a>
+                    <a href="/paginas/absolution.html"><h3>Interstellar</h3></a>
+                </div>
+
+                <div class="colu-xs-6 colu-s-4 colu-m-2 peliculas">
+                    <div class="credito">imagen de TMDb™</div>
+                    <a href="/paginas/absolution.html"><img src="imagenes/big-moana2.jpg" width="100%" alt="película Moana 2"/></a>
+                    <a href="/paginas/absolution.html"><h3>Moana 2</h3></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="elementos-bootstrap">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/carousel-alien-small.png" class="w-100 carousel-item-small" alt="Película de Alien">
+                        <img src="imagenes/carousel-alien-normal.png" class="w-100 carousel-item-normal" alt="Película de Alien">
+                        <img src="imagenes/carousel-alien-big.png" class="w-100 carousel-item-big" alt="Película de Alien">
+                        <div class="carousel-caption d-flex">
+                           <button class="carousel-item-small boton-rojo carousel-item-normal align-self-end mx-auto">Ver más</button>
+                           <div class="carousel-item-big align-self-center col-6">
+                               <p>
+                                    No se pierda el regreso de nuestro alien preferido.
+                                    ¿Seran nuestros protagonistas capaces de derrotarlo?
+                                    Impida que domine el universo yendo a los cines REELVIX.
+                               </p>
+                               <button onclick="window.location.href='/paginas/absolution.html'" class="boton-rojo">Ver más</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/carousel-spectre-small.png" class="w-100 carousel-item-small" alt="Película de Spectre">
+                        <img src="imagenes/carousel-spectre-normal.png" class="w-100 carousel-item-normal" alt="Película de Spectre">
+                        <img src="imagenes/carousel-spectre-big.png" class="w-100 carousel-item-big" alt="Película de Spectre">
+                        <div class="carousel-caption d-flex">
+                            <button class="carousel-item-small boton-rojo carousel-item-normal align-self-end mx-auto">Ver más</button>
+                            <div class="carousel-item-big align-self-center col-6">
+                                <p>
+                                     ¿Usted se cree superior a James Bond, mejor conocido como 007?
+                                </p>
+                                <button onclick="window.location.href='/paginas/absolution.html'" class="boton-rojo">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/carousel-johnnyEnglish-small.png" class="w-100 carousel-item-small" alt="Película de Johnny English">
+                        <img src="imagenes/carousel-johnnyEnglish-normal.png" class="w-100 carousel-item-normal" alt="Película de Johnny English">
+                        <img src="imagenes/carousel-johnnyEnglish-big.png" class="w-100 carousel-item-big" alt="Película de Johnny English">
+                        <div class="carousel-caption d-flex">
+                            <button class="carousel-item-small boton-rojo carousel-item-normal align-self-end mx-auto">Ver más</button>
+                           <div class="carousel-item-big align-self-center col-6">
+                               <p>
+                                    Sienta la comedia de Johnny English yendo a REELVIX.
+                                    Verá que es más divertido que incluso cuando imitaba
+                                    al personaje de MrBean.
+                               </p>
+                               <button onclick="window.location.href='/paginas/absolution.html'" class="boton-rojo">Ver más</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="seccion-card-index" class="contenedor">
+            <div class="fila">
+                <h2 class="colu-xs-12">Echa un vistazo</h2>
+            </div>
+            <div class="fila">
+                <div class="colu-xs-12 colu-s-6">
+                    <div class="card" onclick="window.location.href='/paginas/faq.html';">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-question"></i>
+                        </div>
+                        <h3>FAQ</h3>
+                        <p>
+                            ¿Quieres saber cuales son las preguntas más frecuentes de los usuarios?
+                            No dudes en comprobarlo. Además, el ver las preguntas típicas puede resolver
+                            dudas que puedas tener.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="colu-xs-12 colu-s-6">
+                    <div class="card" onclick="window.location.href='/paginas/sobreNosotros.html';">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <h3>Sobre nosotros</h3>
+                        <p>
+                            REELVIX ha pasado por todo tipo de experiencias y sucesos hasta la fecha.
+                            ¿No quieres saber información sobre nosotros? Así quiza te fies más de nosotros
+                            como empresa, ¿no crees?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!------------------>
+
+    <!-- FOOTER -->
+    <footer></footer>
+    <!--------------->
+
+    <!-- ARCHIVOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="js/cookie.js"></script>
+</body>
+</html>
